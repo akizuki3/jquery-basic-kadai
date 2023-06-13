@@ -1,0 +1,10 @@
+$(function () {
+	$(window).on('load scroll', e => {
+		if (e.type === 'load') {
+			$('.box').text('loadイベントが発生しました');
+		}
+		if (e.type === 'scroll') {
+			$('.box').text('scrollイベントが発生しました');
+		}
+	});
+});
